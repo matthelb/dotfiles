@@ -31,10 +31,6 @@ filetype plugin indent on    " required
 
 " Put your non-Plugin stuff after this line
 
-" Backspace/Delete fixes
-set backspace=2
-fixdel
-
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -49,4 +45,26 @@ let g:syntastic_check_on_wq = 0
 syntax enable
 set background=dark
 colorscheme solarized
+
+set number
+set backspace=indent,eol,start
+set history=1000
+set autoread
+set hidden
+
+if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
+endif
+
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
+set expandtab
+
+fixdel
 

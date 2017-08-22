@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/media/shared/Dropbox/School/College/senior/fall/csci657/assignments-mburke13/src/kvpaxos'
+let g:netrw_dirhist_2='/media/shared/Dropbox/Code/web/usau-rankings/scrape'
